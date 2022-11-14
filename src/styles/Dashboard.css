@@ -1,0 +1,16 @@
+.dashboard{
+    background: #000000c7;
+    opacity: 1;
+}
+
+.schedule {
+    background-color: rgba(33, 33, 33, 0.7);
+    width:260px;
+    font-family: lexend;
+}
+
+.prospects{
+    background-color: rgba(33, 33, 33, 0.7);
+    font-family: lexend;
+}
+
