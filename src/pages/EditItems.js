@@ -4,11 +4,11 @@ import "../styles/font.css"
 import "../styles/font.css"
 
 import RecentOrders from '../Components/RecentOrders';
-import Itemdetail from '../Components/Itemdetail';
+import EditItemdetail from '../Components/EditItemdetail';
 import Allitems from '../Components/Allitems';
 
 
-const Items = () => {
+const EditItems = () => {
    
    
    
@@ -29,7 +29,7 @@ const Items = () => {
         
 
         <div className='w-4/12 pl-8 '>
-        <Itemdetail title={"Detail"}  viewlist={true} />
+        <EditItemdetail />
         </div>
 
        </div>
@@ -41,4 +41,4 @@ const Items = () => {
 
 
 
-export default Items
+export default EditItems

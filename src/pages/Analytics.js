@@ -115,7 +115,7 @@ const Analytics = () => {
             Analytics
           </h4>
          
-          <div className="grid grid-cols-5 gap-5 pr-8 lg:mt-[36px] ">
+          <div className="grid grid-cols-5 gap-4 pr-8 lg:mt-[36px] ">
           {dataobject.map((val, ind) => (
               <div
                  key={ind}
@@ -123,7 +123,7 @@ const Analytics = () => {
               >
                  <div>
                  
-                  <div className="flex   gap-[8px]  ">
+                  <div className="flex   gap-[8px] mr-20  ">
                    <div className='w-[31px] h-[31px] ml-[10px] mt-2 bg-[#0C0C12]/40 rounded-full'>
                     <img src={order} className="align-center justify-center items-center p-2"/>
                     </div>
@@ -135,7 +135,7 @@ const Analytics = () => {
                     <p class="text-[32px] pb-6    font-bold   text-white ">
                       2003
                     </p>
-                    <p class="text-sm pt-6 pl-2  font-light   text-[#1db954] ">
+                    <p class="text-sm pt-6 pl-1  font-light   text-[#1db954] ">
                       +3%
                     </p>
                     </div>

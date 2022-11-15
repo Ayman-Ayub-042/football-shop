@@ -24,6 +24,8 @@ import Selectedgroup from "./Components/Selectedgroup";
 import Categories from "./pages/Categories";
 import Orders from "./pages/Orders";
 import Items from "./pages/Items";
+import EditItems from "./pages/EditItems";
+import AddItems from "./pages/AddItems";
 const SideBarLayout = () => {
   return (
     <div className="flex ">
@@ -54,6 +56,8 @@ function App() {
           />
           <Route exact path="/orders" element={<Orders/>}/>
           <Route exact path="/items" element={<Items/>}/>
+          <Route exact path="/items/edititems" element={<EditItems/>}/>
+          <Route exact path="/items/additems" element={<AddItems/>}/>
           <Route exact path="/playerarea/skill" element={<AddSkill />} />
           <Route exct path="/playerarea/addskill" element={<PlayerareaSkill />} />
           <Route exact path="/traningdrill" element={<Tariningdrills />} />

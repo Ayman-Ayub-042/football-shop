@@ -2,19 +2,23 @@ import React from 'react'
 import edit from "../assets/edit.png"
 import shirt from "../assets/shirt.png"
 import "../styles/font.css"
-const Itemdetail = () => {
+const Itemdetail = (props) => {
   return (
     <>
       <div className=" flex items-center justify-between ">
         <h4 class="self-center text-lg font-normal font-lexend whitespace-nowrap text-white  ">
-          Detail
+        {props.title}
         </h4>
-        <a class="text-sm text-white font-light flex font-lexend">
+        {props.viewlist === true ? (
+        <a class="text-sm text-white font-light flex font-lexend" href='/items/edititems'>
         <img className='w-3 h-4' src={edit}/>
        <p className='pl-1'> Edit</p></a>
+       ) : (
+              <div></div>
+            )}
       </div>
 
-      <div className='pt-8'>
+      <div className='mt-8 w-[141px] h-[141px] rounded-xl'>
       <img src={shirt}/>
       </div>
 

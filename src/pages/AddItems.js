@@ -6,9 +6,10 @@ import "../styles/font.css"
 import RecentOrders from '../Components/RecentOrders';
 import Itemdetail from '../Components/Itemdetail';
 import Allitems from '../Components/Allitems';
+import Additem from '../Components/Additem';
 
 
-const Items = () => {
+const AddItems = () => {
    
    
    
@@ -23,13 +24,13 @@ const Items = () => {
 
           <div className="w-full mr-8">
           
-         <Allitems/>
+         <Additem/>
         </div>
 
         
 
         <div className='w-4/12 pl-8 '>
-        <Itemdetail title={"Detail"}  viewlist={true} />
+        <Itemdetail title={"Previewing"} />
         </div>
 
        </div>
@@ -41,4 +42,4 @@ const Items = () => {
 
 
 
-export default Items
+export default AddItems;
