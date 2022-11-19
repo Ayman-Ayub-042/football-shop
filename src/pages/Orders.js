@@ -50,13 +50,13 @@ const Orders = () => {
             Latest Orders
           </h4>
 
-          <div className="flex items-center justify-start gap-10 font-dm">
+          <div className="flex items-center justify-between gap-10 font-dm">
           <form class="flex items-center w-1/2 font-dm">
             <div class="relative w-full">
               <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
                 <svg
                   aria-hidden="true"
-                  class="w-5 h-5  text-gray-400"
+                  class="w-5 h-5 2xl:h-6 2xl:w-6 text-gray-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -70,16 +70,16 @@ const Orders = () => {
               </div>
               <input
                 type="text"
-                class=" font-dm text-sm rounded-lg  block w-full pl-10 p-2.5  bg-[#212121] border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
+                class=" font-dm text-sm 2xl:text-base rounded-lg  block w-full pl-10 p-2.5  bg-[#212121] border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
                 placeholder="Search orders"
                 required=""
               />
             </div>
            
           </form>
-          <div className="font-dm gap-4 ml-[206px] pl-4">
+          <div className="font-dm gap-4 pl-4">
           <button
-            class="text-[#0c0e14] bg-[#e7e7e7] ml-auto  focus:outline-none font-normal rounded-[4px] text-sm px-4 py-2 text-center inline-flex items-center"
+            class="text-[#0c0e14] bg-[#e7e7e7] ml-auto  focus:outline-none font-normal rounded-[4px] text-sm 2xl:text-base px-4 py-2 text-center inline-flex items-center"
             type="button"
           >
             Latest
@@ -102,7 +102,7 @@ const Orders = () => {
 
           <button
             href="/playerarea/addskill"
-            class="text-white bg-green-500 ml-2   focus:outline-none font-normal rounded-[4px] text-sm px-6 py-2 text-center inline-flex items-center"
+            class="text-white bg-green-500 ml-2   focus:outline-none font-normal rounded-[4px] text-sm 2xl:text-base px-6 py-2 text-center inline-flex items-center"
             type="button"
           >
             Date
@@ -118,19 +118,19 @@ const Orders = () => {
                     <th scope="col" class="py-3 px-7 xl:px-6 2xl:px-12">
                       Billing Name
                     </th>
-                    <th scope="col" class="py-3 px-7 xl:px-10 2xl:px-12">
+                    <th scope="col" class="py-3 px-7 xl:px-9 2xl:px-12">
                       Amount
                     </th>
                     <th scope="col" class="py-3 px-3  2xl:px-3">
                       Item
                     </th>
-                    <th scope="col" class="py-3 px-7 xl:px-10 2xl:px-12">
+                    <th scope="col" class="py-3 px-7 xl:px-9 2xl:px-12">
                       Qty
                     </th>
-                    <th scope="col" class="py-3 px-7 xl:px-10 2xl:px-12">
+                    <th scope="col" class="py-3 px-7 xl:px-9 2xl:px-12">
                       Invoice
                     </th>
-                    <th scope="col" class="py-3 pl-7 xl:pl-10 2xl:pl-12">
+                    <th scope="col" class="py-3 pl-7 xl:pl-11 2xl:pl-12">
                       Status
                     </th>
                      </tr>
@@ -140,7 +140,7 @@ const Orders = () => {
                     <tr class=" border-b text-white/1 text-sm   2xl:text-base font-lexend border-gray-400 text-center">
                       <th
                         scope="row"
-                        class="py-4 pr-9 2xl:pr-12 xl:pr-10 font-light text-sm   2xl:text-lg text-white whitespace-nowrap "
+                        class="py-4 pr-9 2xl:pr-12 xl:pr-9 font-light text-sm   2xl:text-lg text-white whitespace-nowrap "
                       >
                        20-Aug-22
                       </th>
@@ -149,13 +149,13 @@ const Orders = () => {
                           Michael Marino
                        
                       </td>
-                      <td class="py-4 px-7 xl:px-10 2xl:px-12">$500.56</td>
-                      <td class="py-4 px-7 xl:px-10 2xl:px-4">Nike Shoes</td>
-                      <td class="py-4 px-7 xl:px-10 2xl:px-12">1</td>
-                      <td class="py-4 px-7 xl:px-10 2xl:px-12">
+                      <td class="py-4 px-7 xl:px-9 2xl:px-12">$500.56</td>
+                      <td class="py-4 px-7 xl:px-9 2xl:px-4">Nike Shoes</td>
+                      <td class="py-4 px-7 xl:px-9 2xl:px-12">1</td>
+                      <td class="py-4 px-7 xl:px-9 2xl:px-12">
                         <img src={invoice} className="pl-3"/>
                       </td>
-                      <td class="py-4 pl-7 xl:pl-10 2xl:pl-12">
+                      <td class="py-4 pl-7 xl:pl-9 2xl:pl-12">
                       <a
               
               class="inline-flex font-dm items-center py-2 px-5 ml-4 text-sm font-normal text-white bg-[#818181] rounded-[8px] "

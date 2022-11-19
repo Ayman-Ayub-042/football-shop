@@ -96,7 +96,7 @@ const Analytics = () => {
           {
             
             data: staticdata.map((val) => val.id),
-            fontSize:"base",
+            fontSize:"sm",
             borderColor: "rgb(255, 99, 132)",
             backgroundColor: "rgba(255, 99, 132, 0.5)",
           },
@@ -104,18 +104,18 @@ const Analytics = () => {
       };
   return (
     <>
-    <div className="flex-col ">
+    <div className="flex-col w-full ">
       {/* Page Header */}
       <Header title={"Dashboard"} />
 
       <div className="flex m-8 divide-x divide-[#7e7e7e] h-max-screen ">
-        <div className="w-full ">
+        <div className="w-3/4 ">
           {/* analytics */}
-          <h4 class="self-center  text-xl font-medium whitespace-nowrap   mb-9 text-white font-lexend">
+          <h4 class="self-center md:text-lg  xl:text-xl font-medium whitespace-nowrap   mb-9 text-white font-lexend">
             Analytics
           </h4>
          
-          <div className="grid grid-cols-5 gap-4 pr-8 lg:mt-[36px] ">
+          <div className="grid grid-cols-5 gap-4 pr-8 lg:mt-[36px] md:gap-5 ">
           {dataobject.map((val, ind) => (
               <div
                  key={ind}
@@ -123,19 +123,19 @@ const Analytics = () => {
               >
                  <div>
                  
-                  <div className="flex   gap-[8px] mr-20  ">
-                   <div className='w-[31px] h-[31px] ml-[10px] mt-2 bg-[#0C0C12]/40 rounded-full'>
-                    <img src={order} className="align-center justify-center items-center p-2"/>
+                  <div className="flex   gap-[8px] md:gap-1 justify-between  ">
+                   <div className='w-[31px] h-[31px] sm:w-[25px]  sm:h-[25px] ml-[10px] mt-2 bg-[#0C0C12]/40 rounded-full'>
+                    <img src={order} className="align-center justify-center items-center p-1"/>
                     </div>
-                   <div className='mr-10'>
-                    <p class="text-[15px] text-base pt-5  font-normal   text-[#e7e7e7]">
+                   <div className=''>
+                    <p class=" xl:text-[14px] 1xl:text-base sm:text-[10px] md:text-xs  2xl:text-lg pt-5  font-normal   text-[#e7e7e7]">
                       Orders
                     </p>
-                    <div className='flex  pr-6 '>
-                    <p class="text-[32px] pb-6    font-bold   text-white ">
+                    <div className='flex  pr-6 mr-4 '>
+                    <p class=" xl:text-3xl sm:text-xl md:text-2xl  xl:pb-6 md:pb-4 1xl:text-3xl 2xl:text-4xl   font-bold   text-white ">
                       2003
                     </p>
-                    <p class="text-sm pt-6 pl-1  font-light   text-[#1db954] ">
+                    <p class=" xl:text-sm  xl:pt-4  xl:pl-1 sm:text-[10px] md:text-xs md:pt-3 md:pl-0  font-light   text-[#1db954] ">
                       +3%
                     </p>
                     </div>
@@ -149,7 +149,7 @@ const Analytics = () => {
 
           <div className="w-full">
           {/* analytics */}
-          <h4 class="self-center mt-8 text-xl font-medium whitespace-nowrap   mb-9 text-white font-lexend">
+          <h4 class="self-center mt-8   xl:text-xl md:text-lg font-medium whitespace-nowrap md:mb-4   xl:mb-9 text-white font-lexend">
             Revenue
           </h4>
           <div className='mr-8'>
@@ -159,12 +159,12 @@ const Analytics = () => {
 
           <div className="w-full ">
           {/* analytics */}
-          <h4 class="self-center mt-8 text-xl font-medium whitespace-nowrap   mb-9 text-white font-lexend">
+          <h4 class="self-center mt-8  xl:text-xl md:text-lg font-medium whitespace-nowrap    xl:mb-9 text-white font-lexend">
             Latest Orders
           </h4>
           <div class="overflow-x-auto relative mr-8 ">
               <table class="w-full text-left  text-gray-400 ">
-                <thead class="text-sm  2xl:text-lg font-dm text-white/43   border-b border-grey-400">
+                <thead class=" xl:text-base md:text-sm sm:text-[10px]  2xl:text-lg font-dm text-white/43   border-b border-grey-400">
                   <tr className="text-center font-dm">
                     <th scope="col" class="py-3 pr-9 xl:pr-10  2xl:pr-11">
                       Date
@@ -188,10 +188,10 @@ const Analytics = () => {
                 </thead>
                 <tbody className='text-white'>
                   {staticdata1.map((val, ind) => (
-                    <tr class=" border-b text-white/1 text-sm   2xl:text-base font-lexend border-gray-400 text-center">
+                    <tr class=" border-b text-white/1  xl:text-base md:text-sm sm:text-[10px]  2xl:text-base font-lexend border-gray-400 text-center">
                       <th
                         scope="row"
-                        class="py-4 pr-9 2xl:pr-12 xl:pr-10 font-light text-sm   2xl:text-lg text-white whitespace-nowrap "
+                        class="py-4 pr-9 2xl:pr-12 xl:pr-10 font-light xl:text-base md:text-sm  sm:text-xs  2xl:text-lg text-white whitespace-nowrap "
                       >
                        20-Aug-22
                       </th>
@@ -206,7 +206,7 @@ const Analytics = () => {
                       <td class="py-4 px-l xl:pl-10 2xl:pl-12">
                       <a
               
-              class="inline-flex font-dm items-center py-2 px-5 ml-4 text-sm font-normal text-white bg-[#818181] rounded-[8px] "
+              class="inline-flex font-dm items-center py-2 px-5 ml-4 sm:text-[10px] sm:py-1 sm:px-4 text-sm font-normal text-white bg-[#818181] rounded-[8px] "
             >
               Delivered
             </a>

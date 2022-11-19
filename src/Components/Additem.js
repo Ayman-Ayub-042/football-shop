@@ -11,36 +11,36 @@ const Additem = () => {
     </h4>
     <div className=" flex  font-lexend">
    
-      <p class=" text-sm pb-2 pr-[170px] font-normal font-lexend whitespace-nowrap text-[#7e7e7e]  ">
+      <p class=" text-sm 2xl:text-base pb-2 pr-[170px] 2xl:pr-[210px] font-normal font-lexend whitespace-nowrap text-[#7e7e7e]  ">
               Product Name
             </p>
            
-      <p class=" text-sm pr-24 font-normal font-lexend whitespace-nowrap text-[#7e7e7e]  ">
+      <p class=" text-sm 2xl:text-base pr-24 font-normal font-lexend whitespace-nowrap text-[#7e7e7e]  ">
               Price
             </p>
-            <p class=" text-sm pb-2 font-normal font-lexend whitespace-nowrap text-[#7e7e7e]  ">
+            <p class=" text-sm pb-2 2xl:text-base font-normal font-lexend whitespace-nowrap text-[#7e7e7e]  ">
               Quantity
             </p>
            
       </div>
       <div className='flex pt-2'>
-      <input class="font-normal bg-[#212121] pl-3 w-[240px] rounded-[4px] h-8 mr-[29px] text-base placeholder:text-white font-lexend  text-white" placeholder='Nike Drifit Shirt'>
+      <input class="font-normal bg-[#212121] pl-3 2xl-px-3 w-[240px] 2xl:w-[280px] rounded-[4px] h-8 mr-[29px] 2xl:mr-10 2xl:h-10 text-base 2xl:text-lg placeholder:text-white font-lexend  text-white" placeholder='Nike Drifit Shirt'>
           
           </input>
-      <input class=" font-normal bg-[#212121] px-2 mr-[29px] w-[96px] rounded-[4px] h-8 text-sm font-lexend placeholder:text-white  text-white" placeholder='500'>
+      <input class=" font-normal bg-[#212121] px-2 2xl-px-3 mr-[29px] 2xl:mr-10 w-[96px] rounded-[4px] h-8 2xl:h-10 text-sm 2xl:text-base font-lexend placeholder:text-white  text-white" placeholder='500'>
             
             </input>
-            <select  class="font-normal rounded-[4px] bg-[#212121] px-2 w-[96px] h-8 text-sm font-lexend  text-white" >
+            <select  class="font-normal rounded-[4px] bg-[#212121] 2xl-px-3 px-2 w-[96px] h-8 2xl:h-10 text-sm 2xl:text-base font-lexend  text-white" >
             <option>45</option>
            </select>
       </div>
      
-          <div class="relative w-[240px] mt-7">
+          <div class="relative w-[240px] 2xl:w-[280px]  mt-7">
               <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
               <svg
                   className="mr-3 "
-                  width="18"
-                  height="18"
+                  width="21"
+                  height="21"
                   viewBox="0 0 18 18"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -56,17 +56,17 @@ const Additem = () => {
                 </svg>
               </div>
               <input  type="text"
-                class=" font-dm text-xs rounded-[4px]  block w-full pl-10 p-2.5 h-10  bg-[#212121] border-gray-600 placeholder-white text-white focus:ring-blue-500 focus:border-blue-500"
+                class=" font-dm text-xs 2xl:text-base rounded-[4px]  block w-full pl-10 p-2.5 py-8 h-10  bg-[#212121] border-gray-600 placeholder-white text-white focus:ring-blue-500 focus:border-blue-500"
                 placeholder='Upload Product Image'>
           </input>
 
           
             </div>
             <div className='mt-9'>
-              <button class="inline-flex font-lexend items-center py-2 px-9 2xl:py-3 2xl:px-10 text-xs font-normal text-black bg-white rounded-[4px] ">
+              <button class="inline-flex font-lexend items-center py-2 px-9 2xl:py-3 2xl:px-10 text-xs 2xl:text-sm font-normal text-black bg-white rounded-[4px] ">
                 Cancel
               </button>
-              <button class="inline-flex font-lexend items-center py-2 2xl:py-3 2xl:px-10 px-9 ml-[10px] text-xs font-normal  text-[#0c0e14] bg-white rounded-[4px] ">
+              <button class="inline-flex font-lexend items-center py-2 2xl:py-3 2xl:px-10 px-9 ml-[10px] text-xs 2xl:text-sm font-normal  text-[#0c0e14] bg-white rounded-[4px] ">
                 Upload
               </button>
             </div>

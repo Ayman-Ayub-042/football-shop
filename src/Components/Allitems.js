@@ -39,7 +39,7 @@ const Allitems = () => {
               <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
                 <svg
                   aria-hidden="true"
-                  class="w-5 h-5  text-gray-400"
+                  class="w-5 h-5 2xl:w-6 2xl:h-6  text-gray-400"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,7 @@ const Allitems = () => {
               </div>
               <input
                 type="text"
-                class=" font-dm text-sm rounded-lg  block w-full pl-10 p-2.5  bg-[#212121] border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
+                class=" font-dm text-sm 2xl:text-base rounded-lg  block w-full pl-10 p-2.5  bg-[#212121] border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
                 placeholder="Search Items"
                 required=""
               />
@@ -64,7 +64,7 @@ const Allitems = () => {
 
           <a
             href="/items/additems"
-            class="text-white bg-green-500 ml-2   focus:outline-none font-normal rounded-[4px] text-sm px-6 py-2 text-center inline-flex items-center"
+            class="text-white bg-green-500 ml-2   focus:outline-none font-normal rounded-[4px] text-sm 2xl:text-base px-6 py-2 text-center inline-flex items-center"
             type="button"
           >
             Add Item

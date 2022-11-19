@@ -29,7 +29,7 @@ const AddItems = () => {
 
         
 
-        <div className='w-4/12 pl-8 '>
+        <div className='w-1/4 pl-8 '>
         <Itemdetail title={"Previewing"} />
         </div>
 
